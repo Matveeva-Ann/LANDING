@@ -1,0 +1,39 @@
+@font-face {
+  font-family: 'OpenSans-Regular';
+  font-weight: 400;
+  src: url('../fonts/OpenSans-Regular.ttf');
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'OpenSans-SemiBold';
+  font-weight: 600;
+  src: url('../fonts/OpenSans-SemiBold.ttf');
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Oswald-Regular';
+  font-weight: 400;
+  src: url('../fonts/Oswald-Regular.ttf');
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Prompt-Regular';
+  font-weight: 400;
+  src: url('../fonts/Prompt-Regular.ttf');
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'OdibeeSans-Regular';
+  font-weight: 400;
+  src: url('../fonts/OdibeeSans-Regular.ttf');
+  font-style: normal;
+  font-display: swap;
+}

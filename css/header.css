@@ -1,0 +1,5 @@
+.some {
+  background-color: var(--accent-color);
+  font-family: 'Prompt-Regular';
+  font-size: var(--font-size-large);
+}

@@ -1,0 +1,22 @@
+/* Змінні для кольорів */
+:root {
+  --accent-color: #FF5C00;
+
+  --text-color-primary: #353434;
+  --text-color-secondary: #A8A8A8;
+  --text-color-accent: #38318B;
+
+  --background-color: #F5F7FF;
+  --background-color-accent: #544CAC;
+  --background-color-secondary: #CED5F4;
+}
+
+/* Змінні для шрифтів */
+:root {
+  --font-size-small: 12px;
+  --font-size-base: 14px;
+  --font-size-medium: 16px;
+  --font-size-subtitle: 20px;
+  --font-size-title: 40px;
+  --font-size-large: 45px;
+}
