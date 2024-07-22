@@ -1,3 +1,99 @@
 .banner {
   display: flex;
+  align-items: center;
+}
+
+@media (width < 650px) {
+  .banner {
+    flex-direction: column-reverse;
+    padding-bottom: 50px;
+  }
+}
+
+.banner__content {
+  width: 50%;
+}
+
+@media (width < 650px) {
+  .banner__content {
+    width: 90%;
+  }
+}
+
+.banner__img {
+  width: 50%;
+  height: auto;
+  object-fit: cover;
+}
+@media (width < 650px) {
+  .banner__img {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+}
+
+.banner__title {
+  font-size: clamp(var(--font-size-subtitle), 3.3vw, var(--font-size-large));
+  font-family: 'Prompt-Regular';
+  letter-spacing: 0.1em;
+  line-height: clamp(30px, 3.3vw, 55px);
+  margin-bottom: 18px;
+}
+
+.banner__title--accent {
+  color: var(--accent-color);
+}
+
+.banner__text {
+  font-size: clamp(var(--font-size-small), 1vw, var(--font-size-base));
+  line-height: clamp(20px, 1.5vw, 24px);
+  color: var(--text-color-secondary);
+  margin-bottom: 30px;
+}
+
+.banner__buttons {
+  display: flex;
+  gap: clamp(18px, 2.4vw, 34px);
+  font-size: clamp(var(--font-size-small), 1.2vw, var(--font-size-medium));
+}
+
+@media (width < 650px) {
+  .banner__buttons {
+    justify-content: center;
+  }
+}
+
+.banner__bunDiscover,
+.banner__bunDemo {
+  cursor: pointer;
+  transition: opacity 250ms ease;
+  overflow: hidden;
+white-space: nowrap;
+text-overflow: ellipsis;
+}
+
+.banner__bunDiscover:hover,
+.banner__bunDemo:hover {
+  opacity: 0.7;
+  transition: transform 250ms ease;
+}
+
+.banner__bunDiscover:active,
+.banner__bunDemo:active {
+  transform: scale(1.05);
+}
+
+
+.banner__bunDiscover {
+  padding: 12px 22px;
+  background-color: var(--background-color-accent);
+  border-radius: 6px;
+  border: none;
+  box-shadow: 0 2px 8px var(--background-color-accent);
+  color: var(--text-color-white);
+}
+
+.banner__bunDemo {
+  background-color: transparent;
+  border: none;
 }

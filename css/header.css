@@ -59,12 +59,17 @@
   position: absolute;
   top: 38px;
   left: 0px;
-  display: none;
+  opacity: 0;
   min-width: 200px;
+  transform: translateX(-100px);
+  visibility: hidden;
+  transition: transform 250ms ease, opacity 250ms ease, visibility 250ms ease;
 }
 
 .header__navBurger:hover .header__navListBurgerWrapper {
-  display: block;
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(0px);
 }
 
 .header__navListBurger {
