@@ -1,0 +1,26 @@
+body {
+  font-size: var(font-size-base);
+  font-family: 'OpenSans-Regular';
+}
+
+.container {
+  max-width: 1110px;
+  margin: 0 auto;
+}
+
+@media (width < 1170px) {
+  .container {
+    max-width: 90%;
+  }
+}
+
+@media (width < 770px) {
+  .container {
+    max-width: 98%;
+  }
+}
+
+.combined-background {
+  background-color: var(--background-color);
+  padding: 23px 10px 0;
+}

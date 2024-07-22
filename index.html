@@ -1,15 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="./css/styles.css">
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
 
-<body>
+  <body>
+    <div class="combined-background">
+      <header class="header container">
+        <h1 class="header__logo">
+          <img src="./images/icons/Logo.svg" alt="logo" />
+          ZIRO
+        </h1>
+        <nav class="header__nav">
+          <div class="header__navBurger">
+            <button type="button" class="header__navBurgerBtn">
+              <img src="./images/icons/burger-menu.svg" alt="icon burger-menu" />
+            </button>
+            <div class="header__navListBurgerWrapper">
+              <ul class="header__navListBurger">
+                <li>Home</li>
+                <li>Pricing</li>
+                <li>Blog</li>
+                <li>Become a member</li>
+                <li>About Us</li>
+              </ul>
+            </div>
+          </div>
 
-</body>
+          <ul class="header__navList">
+            <li>Home</li>
+            <li>Pricing</li>
+            <li>Blog</li>
+            <li>Become a member</li>
+            <li>About Us</li>
+          </ul>
+        </nav>
+        <div class="header__input">
+          <input type="text" placeholder="Search here...." />
+          <button type="button" class="header__inputBtn">
+            <img src="./images/icons/search.svg" alt="icon search" />
+          </button>
+        </div>
+        <div class="header__authBtns">
+          <button type="button" class="header__authBtns--active" aria-label="Open login modal">Login</button>
+          <span>/</span>
+          <button type="button" aria-label="Open Sing Up modal">Sing Up</button>
+        </div>
+      </header>
 
+      <section class="banner container">
+        <div class="banner__content">
+          <h2>Find out talented freelancer with better review faster.</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+          </p>
+          <div>
+            <button>Discover Now</button>
+            <button>Watch Demo</button>
+          </div>
+        </div>
+        <img class="banner__img" src="./images/Bunner.jpg" alt="bunner" />
+      </section>
+    </div>
+  </body>
 </html>

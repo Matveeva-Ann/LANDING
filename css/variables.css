@@ -1,14 +1,18 @@
 /* Змінні для кольорів */
 :root {
-  --accent-color: #FF5C00;
+  --accent-color: #ff5c00;
 
   --text-color-primary: #353434;
-  --text-color-secondary: #A8A8A8;
-  --text-color-accent: #38318B;
+  --text-color-secondary: #a8a8a8;
+  --text-color-accent: #38318b;
+  --text-color-accentBtn: #4238AF;
+  --placeholder:#A5A5A5;
 
-  --background-color: #F5F7FF;
-  --background-color-accent: #544CAC;
-  --background-color-secondary: #CED5F4;
+  --background-color: #f5f7ff;
+  --background-color-white: #fff;
+  --background-color-accent: #544cac;
+  --background-color-secondary: #ced5f4;
+  --backgroundBtn-color: #c0c2f822;
 }
 
 /* Змінні для шрифтів */
