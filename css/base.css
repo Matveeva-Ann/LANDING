@@ -8,6 +8,19 @@ body {
   margin: 0 auto;
 }
 
+.combined-background {
+  background-color: var(--background-color);
+  padding: 23px 10px 0;
+}
+
+.sectionTitle {
+  font-size: var(--font-size-title);
+  font-family: 'Oswald-Regular';
+  line-height: 50px;
+  letter-spacing: 0.5rem;
+  color: var(--text-title-color);
+}
+
 @media (width < 1170px) {
   .container {
     max-width: 90%;
@@ -18,9 +31,4 @@ body {
   .container {
     max-width: 98%;
   }
-}
-
-.combined-background {
-  background-color: var(--background-color);
-  padding: 23px 10px 0;
 }
