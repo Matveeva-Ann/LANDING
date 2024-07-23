@@ -1,0 +1,54 @@
+.chooseUs {
+  margin-top: 100px;
+}
+
+.chooseUs__title {
+  text-align: center;
+}
+
+.chooseUs__titleText {
+  color: var(--text-color-secondary);
+  text-align: center;
+  margin: 20px auto;
+  max-width: 550px;
+}
+
+.chooseUs__cards {
+  margin-top: 45px;
+}
+
+.chooseUs__cardsList {
+  display: flex;
+  gap: 30px;
+}
+
+.chooseUs__cardImgWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  background-color: #6156dc;
+  border-radius: 7px;
+}
+
+.chooseUs__cardItem {
+  width: calc(100% / 3);
+  padding: 40px 37px 34px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 14px #a5a5a538;
+  cursor: pointer;
+  transition-duration: 250ms;
+}
+
+.chooseUs__cardItem--active {
+  background-color: var(--background-color-lightGray);
+  transform: translateY(-20px);
+}
+
+.chooseUs__cardItem:nth-child(2) .chooseUs__cardImgWrapper {
+  background-color: #ef6010;
+}
+.chooseUs__cardItem:nth-child(3) .chooseUs__cardImgWrapper {
+  background-color: #A73EED;
+}
