@@ -1,0 +1,77 @@
+.pricingPlan__cardList {
+  display: flex;
+  gap: 30px;
+  margin-top: 75px;
+}
+
+.pricingPlan__cardItem {
+  width: calc(100% / 3);
+  min-height: 500px;
+  padding: 60px 10px;
+  border-radius: 20px;
+  box-shadow: 0 0 12px #a5a5a538;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.pricingPlan__cardItem--active {
+  background-color: var(--background-color-lightGray);
+  transform: translateY(-20px);
+  transition-duration: 250ms;
+}
+
+.pricingPlan__cardItem--active button {
+  opacity: 1;
+}
+
+.pricingPlan__price {
+  font-size: var(--font-size-large);
+}
+
+.pricingPlan__type {
+  text-transform: uppercase;
+  color: #4238af;
+  font-size: var(--font-size-subtitle);
+  font-family: 'OpenSans-SemiBold';
+}
+
+.pricingPlan__month {
+  font-size: var(--font-size-medium);
+  margin: 24px 0 70px;
+  color: #8a86b9;
+}
+
+.planListItem {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  color: var(--text-color-secondary);
+}
+
+.pricingPlan__btn {
+  margin-top: 47px;
+  opacity: 0.5;
+}
+
+@media (width < 1050px) {
+  .pricingPlan__cardList {
+    flex-direction: column;
+  }
+  .pricingPlan__cardItem--active {
+    transform: translateY(0px);
+  }
+  .pricingPlan__cardItem {
+    width: 50%;
+    margin: 0 auto;
+  }
+}
+
+@media (width < 650px) {
+  .pricingPlan__cardItem {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
