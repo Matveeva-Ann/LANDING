@@ -21,14 +21,44 @@ body {
   color: var(--text-title-color);
 }
 
+.textCenter {
+  color: var(--text-color-secondary);
+  text-align: center;
+  margin: 20px auto;
+  max-width: 550px;
+}
+
+.btnStyle {
+  padding: 15px 35px;
+  background-color: #4238af;
+  border-radius: 47px;
+  color: #fff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
 @media (width < 1170px) {
   .container {
     max-width: 90%;
   }
 }
 
+@media (width < 1050px) {
+  .btnStyle {
+    padding: 10px 25px;
+    background-color: #4238af;
+    border-radius: 47px;
+  }
+}
+
 @media (width < 770px) {
   .container {
     max-width: 98%;
+  }
+  .btnStyle {
+    padding: 6px 18px;
+    border-radius: 47px;
+    font-size: 12px;
   }
 }
