@@ -4,7 +4,7 @@ const accordionArrow = document.querySelectorAll('.howItWorks__icon');
 
 accordion.addEventListener('click', e => {
   const targetQuestion = e.target.closest('.howItWorks__titleSearch');
-  
+
   if (targetQuestion) {
     const question = targetQuestion.getAttribute('data-question');
     const targetAnswer = document.querySelector(`.howItWorks__answerSearch[data-answer="${question}"]`);
@@ -23,3 +23,13 @@ accordion.addEventListener('click', e => {
     }
   }
 });
+
+
+const chooseUsCardsList = document.querySelector('.chooseUs__cardsList');
+const chooseUsCardsAll = document.querySelectorAll('.chooseUs__cardItem');
+
+chooseUsCardsList.addEventListener('click', (e) => {
+  const clickElem = e.target.closest('.chooseUs__cardItem');
+  chooseUsCardsAll.forEach((elem) => elem.classList.remove('chooseUs__cardItem--active'));
+  clickElem.classList.add('chooseUs__cardItem--active')
+})

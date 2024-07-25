@@ -6,14 +6,15 @@
   --text-color-secondary: #a8a8a8;
   --text-color-white: #fff;
   --text-color-accent: #38318b;
-  --text-color-accentBtn: #4238AF;
+  --text-color-accentBtn: #4238af;
   --text-title-color: #353434;
-  --placeholder:#A5A5A5;
+  --placeholder: #a5a5a5;
 
   --background-color: #f5f7ff;
   --background-color-white: #fff;
   --background-color-accent: #544cac;
   --background-color-secondary: #ced5f4;
+  --background-color-lightGray: #f9faff;
   --backgroundBtn-color: #c0c2f822;
 }
 
