@@ -1,0 +1,120 @@
+.howItWorks {
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.howItWorks__note {
+  display: flex;
+  gap: 40px;
+  color: var(--accent-color);
+  font-size: var(--font-size-small);
+  font-family: 'Oswald-Regular';
+}
+
+.howItWorks__content {
+  width: 50%;
+}
+
+.howItWorks__video {
+  object-fit: cover;
+  border-radius: 20px;
+  width: 50%;
+  height: 440px;
+}
+
+.howItWorks__titleSearch {
+  display: flex;
+  justify-content: space-between;
+  font-size: var(--font-size-medium);
+  color: var(--text-title-color);
+  line-height: 50px;
+}
+
+.howItWorks__iconWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+}
+
+.howItWorks__icon {
+  width: 27px;
+  height: 20px;
+}
+
+.howItWorks__icon--rotate {
+  transition: transform 250ms linear;
+  transform: rotateZ(180deg);
+}
+
+.howItWorks__answerSearch {
+  margin: 0 45px;
+  color: var(--text-color-secondary);
+  font-size: var(--font-size-small);
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: max-height 500ms ease-out, opacity 500ms ease-out;
+}
+
+.js-active {
+  max-height: 500px;
+  opacity: 1;
+  visibility: visible;
+}
+
+.js-howItWorksList {
+  margin-top: 46px;
+}
+
+.js-howItWorksItem {
+  background-color: #f5f7ff;
+  border-radius: 8px;
+  margin-bottom: 22px;
+  padding: 14px;
+  cursor: pointer;
+}
+
+.howItWorks__numb {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 6px;
+  margin-right: 15px;
+}
+
+.js-howItWorksItem:nth-child(1) .howItWorks__numb {
+  color: #9444c9;
+  background-color: #f3e0ff;
+}
+
+.js-howItWorksItem:nth-child(2) .howItWorks__numb {
+  color: #626fff;
+  background-color: #e7e9fe;
+}
+
+.js-howItWorksItem:nth-child(3) .howItWorks__numb {
+  color: #ff5c00;
+  background-color: #ffdecc;
+}
+
+@media (width < 1050px) {
+  .howItWorks {
+    flex-direction: column;
+  }
+  .howItWorks__content {
+    width: 100%;
+  }
+  .howItWorks__video {
+    width: 100%;
+  }
+}
+
+@media (width < 770px) {
+  .howItWorks {
+    padding: 20px;
+  }
+}

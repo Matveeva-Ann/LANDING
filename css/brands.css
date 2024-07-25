@@ -6,6 +6,18 @@
   margin: 32px 0 100px;
 }
 
+.brands__list li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.brands__list li > img {
+  max-height: 111px;
+  max-width: 152px;
+  object-fit: cover;
+}
+
 @media (width < 900px) {
   .brands__list {
     grid-template-columns: repeat(3, 1fr);
@@ -20,15 +32,4 @@
   .brands__list {
     display: none;
   }
-}
-.brands__list li {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.brands__list li > img {
-  max-height: 111px;
-  max-width: 152px;
-  object-fit: cover;
 }
