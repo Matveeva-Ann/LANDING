@@ -1,0 +1,78 @@
+.customerSays__title {
+  text-align: center;
+}
+
+.customerSays__contentWrapper {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.customerSays__img {
+  width: clamp(200px, 24vw, 350px);
+  height: clamp(200px, 24vw, 350px);
+}
+
+.customerSays__customerName {
+  font-size: clamp(16px, 3vw, 30px);
+  font-family: 'OpenSans-SemiBold';
+  margin-bottom: 14px;
+}
+
+.customerSays__customerPosition {
+  color: #868686;
+  text-transform: uppercase;
+  font-size: var(--font-size-base);
+}
+
+.customerSays__starsWrapper {
+  display: flex;
+  justify-content: flex-end;
+  gap: 6px;
+  margin: 16px 0 6px;
+}
+
+.customerSays__comment {
+  font-family: 'OpenSans-Regular';
+  letter-spacing: 0.1em;
+  line-height: 24px;
+  color: #383838;
+  margin-bottom: 39px;
+  font-size: clamp(10px, 1.3vw, 14px);
+
+}
+
+.customerSays__actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.customerSays__customerImgsWrapper {
+  display: flex;
+}
+
+.customerSays__customerImgs {
+  width: 50px;
+  height: 50px;
+  border: 3px solid var(--accent-color);
+  border-radius: 50%;
+  margin-left: -20px;
+}
+
+.customerSays__customerImgs--template {
+  background-color: #A9A3E9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+}
+
+@media (width < 700px) {
+  .customerSays__img {
+    display: none;
+  }
+  .customerSays__contentWrapper {
+    padding: 20px;
+  }
+}

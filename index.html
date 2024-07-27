@@ -1,422 +1,542 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="./css/styles.css" />
-  </head>
 
-  <body>
-    <div class="combined-background">
-      <header class="header container">
-        <h1 class="header__logo">
-          <img src="./images/icons/Logo.svg" alt="logo" />
-          ZIRO
-        </h1>
-        <nav class="header__nav">
-          <div class="header__navBurger">
-            <button type="button" class="header__navBurgerBtn">
-              <img src="./images/icons/burger-menu.svg" alt="icon burger-menu" />
-            </button>
-            <div class="header__navListBurgerWrapper">
-              <ul class="header__navListBurger">
-                <li>Home</li>
-                <li>Pricing</li>
-                <li>Blog</li>
-                <li>Become a member</li>
-                <li>About Us</li>
-              </ul>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/styles.css" />
+</head>
+
+<body>
+  <div class="combined-background">
+    <header class="header container">
+      <h1 class="header__logo">
+        <img src="./images/icons/Logo.svg" alt="logo" />
+        ZIRO
+      </h1>
+      <nav class="header__nav">
+        <div class="header__navBurger">
+          <button type="button" class="header__navBurgerBtn">
+            <img src="./images/icons/burger-menu.svg" alt="icon burger-menu" />
+          </button>
+          <div class="header__navListBurgerWrapper">
+            <ul class="header__navListBurger">
+              <li>Home</li>
+              <li>Pricing</li>
+              <li>Blog</li>
+              <li>Become a member</li>
+              <li>About Us</li>
+            </ul>
+          </div>
+        </div>
+
+        <ul class="header__navList">
+          <li>Home</li>
+          <li>Pricing</li>
+          <li>Blog</li>
+          <li>Become a member</li>
+          <li>About Us</li>
+        </ul>
+      </nav>
+      <div class="header__input">
+        <input type="text" placeholder="Search here...." />
+        <button type="button" class="header__inputBtn">
+          <img src="./images/icons/search.svg" alt="icon search" />
+        </button>
+      </div>
+      <div class="header__authBtns">
+        <button type="button" class="header__authBtns--active" aria-label="Open login modal">Login</button>
+        <span>/</span>
+        <button type="button" aria-label="Open Sing Up modal">Sing Up</button>
+      </div>
+    </header>
+
+    <section class="banner container">
+      <div class="banner__content">
+        <h2 class="banner__title">
+          Find out talented <span class="banner__title--accent">freelancer</span> with better review faster.
+        </h2>
+        <p class="banner__text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+          dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+        </p>
+        <div class="banner__buttons">
+          <button class="banner__bunDiscover">Discover Now</button>
+          <button class="banner__bunDemo">Watch Demo</button>
+        </div>
+      </div>
+      <img class="banner__img" src="./images/Bunner.png" alt="bunner" />
+    </section>
+  </div>
+  <section class="brands container">
+    <ul class="brands__list">
+      <li><img src="./images/Brand.jpg" alt="brand Brand" /></li>
+      <li><img src="./images/DesignBrand.jpg" alt="brand DesignBrand" /></li>
+      <li><img src="./images/Greenery.jpg" alt="brand Greenery" /></li>
+      <li><img src="./images/Natural.jpg" alt="brand Natural" /></li>
+      <li><img src="./images/Neture.jpg" alt="brand Neture" /></li>
+      <li><img src="./images/Company.jpg" alt="brand Company" /></li>
+    </ul>
+  </section>
+
+  <section class="howItWorks container">
+    <div class="howItWorks__content">
+      <span class="howItWorks__note">How it works</span>
+      <h2 class="sectionTitle">Start find a job you love with us easily</h2>
+      <ul class="js-howItWorksList">
+        <li class="js-howItWorksItem">
+          <div class="howItWorks__titleSearch" data-question="first">
+            <p><span class="howItWorks__numb">1</span>Complete Profile</p>
+            <div class="howItWorks__iconWrapper">
+              <img class="howItWorks__icon" src="./images/icons/down-arrow.svg" alt="down arrow" />
             </div>
           </div>
-
-          <ul class="header__navList">
-            <li>Home</li>
-            <li>Pricing</li>
-            <li>Blog</li>
-            <li>Become a member</li>
-            <li>About Us</li>
-          </ul>
-        </nav>
-        <div class="header__input">
-          <input type="text" placeholder="Search here...." />
-          <button type="button" class="header__inputBtn">
-            <img src="./images/icons/search.svg" alt="icon search" />
-          </button>
-        </div>
-        <div class="header__authBtns">
-          <button type="button" class="header__authBtns--active" aria-label="Open login modal">Login</button>
-          <span>/</span>
-          <button type="button" aria-label="Open Sing Up modal">Sing Up</button>
-        </div>
-      </header>
-
-      <section class="banner container">
-        <div class="banner__content">
-          <h2 class="banner__title">
-            Find out talented <span class="banner__title--accent">freelancer</span> with better review faster.
-          </h2>
-          <p class="banner__text">
+          <p class="howItWorks__answerSearch" data-answer="first">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
           </p>
-          <div class="banner__buttons">
-            <button class="banner__bunDiscover">Discover Now</button>
-            <button class="banner__bunDemo">Watch Demo</button>
+        </li>
+        <li class="js-howItWorksItem">
+          <div class="howItWorks__titleSearch" data-question="second">
+            <p><span class="howItWorks__numb">2</span>Search Vacancies</p>
+            <div class="howItWorks__iconWrapper">
+              <img class="howItWorks__icon" src="./images/icons/down-arrow.svg" alt="down arrow" />
+            </div>
+          </div>
+          <p class="howItWorks__answerSearch" data-answer="second">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
+          </p>
+        </li>
+        <li class="js-howItWorksItem">
+          <div class="howItWorks__titleSearch" data-question="third">
+            <p><span class="howItWorks__numb">3</span>Apply Job</p>
+            <div class="howItWorks__iconWrapper">
+              <img class="howItWorks__icon" src="./images/icons/down-arrow.svg" alt="down arrow" />
+            </div>
+          </div>
+          <p class="howItWorks__answerSearch" data-answer="third">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
+          </p>
+        </li>
+      </ul>
+    </div>
+    <video class="howItWorks__video" controls poster="./images/christina-wocintechchat-com-YVT21p6pO_g-unsplash 1.jpg">
+      <source src="./video.mp4" type="video/mp4" />
+    </video>
+  </section>
+
+  <section class="chooseUs container">
+    <h2 class="sectionTitle chooseUs__title">Why Choose Us</h2>
+    <p class="textCenter">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+      magna aliqua. Ut enim ad minim veniam.
+    </p>
+    <div class="chooseUs__cards">
+      <ul class="chooseUs__cardsList">
+        <li class="chooseUs__cardItem">
+          <div class="chooseUs__cardImgWrapper"><img src="./images/icons/Vector.svg" alt="Vector icon" /></div>
+          <h3 class="chooseUs__cardTitle">Trusted</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna.
+          </p>
+        </li>
+        <li class="chooseUs__cardItem">
+          <div class="chooseUs__cardImgWrapper"><img src="./images/icons/Vector.svg" alt="Vector icon" /></div>
+          <h3 class="chooseUs__cardTitle">Easy to Use</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna.
+          </p>
+        </li>
+        <li class="chooseUs__cardItem">
+          <div class="chooseUs__cardImgWrapper"><img src="./images/icons/Vector.svg" alt="Vector icon" /></div>
+          <h3 class="chooseUs__cardTitle">Faster</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna.
+          </p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="featuredJobs container">
+    <h2 class="featuredJobs__title sectionTitle">Featured Jobs</h2>
+    <p class="textCenter">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+      magna aliqua. Ut enim ad minim veniam.
+    </p>
+
+    <div class="featuredJobs__content">
+      <div class="featuredJobs__contentBtns">
+        <button class="featuredJobs__contentBtn featuredJobs__contentBtnLeft" data-direction="left">
+          <svg width="22" height="19" viewBox="0 0 22 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M19.0151 9.61149L11.9049 2.50124C11.4577 2.05404 11.4577 1.33852 11.9049 0.936039C12.3521 0.533558 13.0676 0.488838 13.4701 0.936039L21.3858 8.85176C21.833 9.29896 21.833 10.0145 21.3858 10.417L13.1123 18.6455C12.8887 18.8691 12.6204 18.9585 12.3074 18.9585C11.9943 18.9585 11.726 18.8691 11.5024 18.6455C11.0552 18.1983 11.0552 17.4827 11.5024 17.0803L19.0151 9.61149Z"
+              fill="#fff" />
+            <path
+              d="M1.35116 8.67163L13.4256 8.67163C14.0517 8.67163 14.5436 9.16355 14.5436 9.78963C14.5436 10.4157 14.0517 10.9076 13.4256 10.9076L1.35116 10.9076C0.725075 10.9076 0.233154 10.4157 0.233154 9.78963C0.233154 9.16355 0.725075 8.67163 1.35116 8.67163Z"
+              fill="#fff" />
+          </svg>
+        </button>
+        <button class="featuredJobs__contentBtn featuredJobs__contentBtnRight" data-direction="right">
+          <svg width="22" height="19" viewBox="0 0 22 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M19.0151 9.61149L11.9049 2.50124C11.4577 2.05404 11.4577 1.33852 11.9049 0.936039C12.3521 0.533558 13.0676 0.488838 13.4701 0.936039L21.3858 8.85176C21.833 9.29896 21.833 10.0145 21.3858 10.417L13.1123 18.6455C12.8887 18.8691 12.6204 18.9585 12.3074 18.9585C11.9943 18.9585 11.726 18.8691 11.5024 18.6455C11.0552 18.1983 11.0552 17.4827 11.5024 17.0803L19.0151 9.61149Z"
+              fill="#EF6010" />
+            <path
+              d="M1.35116 8.67163L13.4256 8.67163C14.0517 8.67163 14.5436 9.16355 14.5436 9.78963C14.5436 10.4157 14.0517 10.9076 13.4256 10.9076L1.35116 10.9076C0.725075 10.9076 0.233154 10.4157 0.233154 9.78963C0.233154 9.16355 0.725075 8.67163 1.35116 8.67163Z"
+              fill="#EF6010" />
+          </svg>
+        </button>
+      </div>
+      <div class="featuredJobs__contentCardsWrapper">
+        <ul class="featuredJobs__contentCardList">
+          <li class="featuredJobs__contentCard featuredJobs__contentCard--active">
+            <img class="featuredJobs__contentCardImg" src="./images/male-student.png" alt="people photo" />
+            <h3 class="featuredJobs__contentCardTitle">Database Programmer</h3>
+            <p class="featuredJobs__contentCardRole">Marraz Team</p>
+            <ul>
+              <li class="featuredJobs__cardInfo">
+                <img src="./images/icons/money.svg" alt="money icon" />
+                <p>$14,000 - $25,000 / <span class="featuredJobs__cardInfo--gray">monthly</span></p>
+              </li>
+              <li class="featuredJobs__cardInfo">
+                <img src="./images/icons/location.svg" alt="location" />
+                <p>London,Enlend <span class="featuredJobs__cardInfo--gray"> View map</span></p>
+              </li>
+            </ul>
+            <div class="featuredJobs__cardInfoBtns">
+              <button class="featuredJobs__cardInfoBtnHeadt" type="button">
+                <img src="./images/icons/heart.svg" alt="heart icon" />
+              </button>
+              <button class="btnStyle js-btnApply btnStyle--bright" type="button">Apply Now</button>
+            </div>
+          </li>
+          <li class="featuredJobs__contentCard">
+            <img class="featuredJobs__contentCardImg" src="./images/nathan-van-de-graaf-8ngIBwU2-5U-unsplash 1.jpg"
+              alt="people photo" />
+            <h3 class="featuredJobs__contentCardTitle">Database Programmer</h3>
+            <p class="featuredJobs__contentCardRole">Marraz Team</p>
+            <ul>
+              <li class="featuredJobs__cardInfo">
+                <img src="./images/icons/money.svg" alt="money icon" />
+                <p>$14,000 - $25,000 / <span class="featuredJobs__cardInfo--gray">monthly</span></p>
+              </li>
+              <li class="featuredJobs__cardInfo">
+                <img src="./images/icons/location.svg" alt="location" />
+                <p>London,Enlend <span class="featuredJobs__cardInfo--gray"> View map</span></p>
+              </li>
+            </ul>
+            <div class="featuredJobs__cardInfoBtns">
+              <button class="featuredJobs__cardInfoBtnHeadt" type="button">
+                <img src="./images/icons/heart.svg" alt="heart icon" />
+              </button>
+              <button class="btnStyle js-btnApply" type="button">Apply Now</button>
+            </div>
+          </li>
+          <li class="featuredJobs__contentCard">
+            <img class="featuredJobs__contentCardImg" src="./images/male-student.png" alt="people photo" />
+            <h3 class="featuredJobs__contentCardTitle">Database Programmer</h3>
+            <p class="featuredJobs__contentCardRole">Marraz Team</p>
+            <ul>
+              <li class="featuredJobs__cardInfo">
+                <img src="./images/icons/money.svg" alt="money icon" />
+                <p>$14,000 - $25,000 / <span class="featuredJobs__cardInfo--gray">monthly</span></p>
+              </li>
+              <li class="featuredJobs__cardInfo">
+                <img src="./images/icons/location.svg" alt="location" />
+                <p>London,Enlend <span class="featuredJobs__cardInfo--gray"> View map</span></p>
+              </li>
+            </ul>
+            <div class="featuredJobs__cardInfoBtns">
+              <button class="featuredJobs__cardInfoBtnHeadt" type="button">
+                <img src="./images/icons/heart.svg" alt="heart icon" />
+              </button>
+              <button class="btnStyle js-btnApply" type="button">Apply Now</button>
+            </div>
+          </li>
+          <li class="featuredJobs__contentCard">
+            <img class="featuredJobs__contentCardImg" src="./images/nathan-van-de-graaf-8ngIBwU2-5U-unsplash 1.jpg"
+              alt="people photo" />
+            <h3 class="featuredJobs__contentCardTitle">Database Programmer</h3>
+            <p class="featuredJobs__contentCardRole">Marraz Team</p>
+            <ul>
+              <li class="featuredJobs__cardInfo">
+                <img src="./images/icons/money.svg" alt="money icon" />
+                <p>$14,000 - $25,000 / <span class="featuredJobs__cardInfo--gray">monthly</span></p>
+              </li>
+              <li class="featuredJobs__cardInfo">
+                <img src="./images/icons/location.svg" alt="location" />
+                <p>London,Enlend <span class="featuredJobs__cardInfo--gray"> View map</span></p>
+              </li>
+            </ul>
+            <div class="featuredJobs__cardInfoBtns">
+              <button class="featuredJobs__cardInfoBtnHeadt" type="button">
+                <img src="./images/icons/heart.svg" alt="heart icon" />
+              </button>
+              <button class="btnStyle js-btnApply" type="button">Apply Now</button>
+            </div>
+          </li>
+          <li class="featuredJobs__contentCard">
+            <img class="featuredJobs__contentCardImg" src="./images/male-student.png" alt="people photo" />
+            <h3 class="featuredJobs__contentCardTitle">Database Programmer</h3>
+            <p class="featuredJobs__contentCardRole">Marraz Team</p>
+            <ul>
+              <li class="featuredJobs__cardInfo">
+                <img src="./images/icons/money.svg" alt="money icon" />
+                <p>$14,000 - $25,000 / <span class="featuredJobs__cardInfo--gray">monthly</span></p>
+              </li>
+              <li class="featuredJobs__cardInfo">
+                <img src="./images/icons/location.svg" alt="location" />
+                <p>London,Enlend <span class="featuredJobs__cardInfo--gray"> View map</span></p>
+              </li>
+            </ul>
+            <div class="featuredJobs__cardInfoBtns">
+              <button class="featuredJobs__cardInfoBtnHeadt" type="button">
+                <img src="./images/icons/heart.svg" alt="heart icon" />
+              </button>
+              <button class="btnStyle js-btnApply" type="button">Apply Now</button>
+            </div>
+          </li>
+          <li class="featuredJobs__contentCard">
+            <img class="featuredJobs__contentCardImg" src="./images/nathan-van-de-graaf-8ngIBwU2-5U-unsplash 1.jpg"
+              alt="people photo" />
+            <h3 class="featuredJobs__contentCardTitle">Database Programmer</h3>
+            <p class="featuredJobs__contentCardRole">Marraz Team</p>
+            <ul>
+              <li class="featuredJobs__cardInfo">
+                <img src="./images/icons/money.svg" alt="money icon" />
+                <p>$14,000 - $25,000 / <span class="featuredJobs__cardInfo--gray">monthly</span></p>
+              </li>
+              <li class="featuredJobs__cardInfo">
+                <img src="./images/icons/location.svg" alt="location" />
+                <p>London,Enlend <span class="featuredJobs__cardInfo--gray"> View map</span></p>
+              </li>
+            </ul>
+            <div class="featuredJobs__cardInfoBtns">
+              <button class="featuredJobs__cardInfoBtnHeadt" type="button">
+                <img src="./images/icons/heart.svg" alt="heart icon" />
+              </button>
+              <button class="btnStyle js-btnApply" type="button">Apply Now</button>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="btnMoreWrapper">
+      <button class="btnStyle" type="button">View More</button>
+    </div>
+  </section>
+
+  <section class="customerSays container">
+    <h2 class="customerSays__title sectionTitle">What Our Customer Says</h2>
+    <p class="textCenter">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+      magna aliqua. Ut enim ad minim veniam.
+    </p>
+
+    <div class="customerSays__contentWrapper">
+      <img class="customerSays__img" src="./images/bohemian.jpg" alt="bohemian">
+      <div class="customerSays__content">
+        <h3 class="customerSays__customerName">William Smith</h3>
+        <p class="customerSays__customerPosition">CEO OF THE LOVE STUDENTS</p>
+        <div class="customerSays__starsWrapper">
+          <img src="./images/icons/star.svg" alt="">
+          <img src="./images/icons/star.svg" alt="">
+          <img src="./images/icons/star.svg" alt="">
+          <img src="./images/icons/star.svg" alt="">
+          <img src="./images/icons/star2.svg" alt="">
+          <span>4.8</span>
+        </div>
+        <p class="customerSays__comment">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+          incididunt ut labore et
+          dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip.Lorem
+          ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+          aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip.”</p>
+
+        <div class="customerSays__actions">
+          <div class="featuredJobs__contentBtns">
+            <button class="featuredJobs__contentBtn featuredJobs__contentBtnLeft" data-direction="left">
+              <svg width="22" height="19" viewBox="0 0 22 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M19.0151 9.61149L11.9049 2.50124C11.4577 2.05404 11.4577 1.33852 11.9049 0.936039C12.3521 0.533558 13.0676 0.488838 13.4701 0.936039L21.3858 8.85176C21.833 9.29896 21.833 10.0145 21.3858 10.417L13.1123 18.6455C12.8887 18.8691 12.6204 18.9585 12.3074 18.9585C11.9943 18.9585 11.726 18.8691 11.5024 18.6455C11.0552 18.1983 11.0552 17.4827 11.5024 17.0803L19.0151 9.61149Z"
+                  fill="#fff" />
+                <path
+                  d="M1.35116 8.67163L13.4256 8.67163C14.0517 8.67163 14.5436 9.16355 14.5436 9.78963C14.5436 10.4157 14.0517 10.9076 13.4256 10.9076L1.35116 10.9076C0.725075 10.9076 0.233154 10.4157 0.233154 9.78963C0.233154 9.16355 0.725075 8.67163 1.35116 8.67163Z"
+                  fill="#fff" />
+              </svg>
+            </button>
+            <button class="featuredJobs__contentBtn featuredJobs__contentBtnRight" data-direction="right">
+              <svg width="22" height="19" viewBox="0 0 22 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M19.0151 9.61149L11.9049 2.50124C11.4577 2.05404 11.4577 1.33852 11.9049 0.936039C12.3521 0.533558 13.0676 0.488838 13.4701 0.936039L21.3858 8.85176C21.833 9.29896 21.833 10.0145 21.3858 10.417L13.1123 18.6455C12.8887 18.8691 12.6204 18.9585 12.3074 18.9585C11.9943 18.9585 11.726 18.8691 11.5024 18.6455C11.0552 18.1983 11.0552 17.4827 11.5024 17.0803L19.0151 9.61149Z"
+                  fill="#EF6010" />
+                <path
+                  d="M1.35116 8.67163L13.4256 8.67163C14.0517 8.67163 14.5436 9.16355 14.5436 9.78963C14.5436 10.4157 14.0517 10.9076 13.4256 10.9076L1.35116 10.9076C0.725075 10.9076 0.233154 10.4157 0.233154 9.78963C0.233154 9.16355 0.725075 8.67163 1.35116 8.67163Z"
+                  fill="#EF6010" />
+              </svg>
+            </button>
+          </div>
+
+          <div class="customerSays__customerImgsWrapper">
+            <img class="customerSays__customerImgs" src="./images/nathan-van-de-graaf-8ngIBwU2-5U-unsplash 1.jpg"
+              alt="customer img">
+            <img class="customerSays__customerImgs" src="./images/nathan-van-de-graaf-8ngIBwU2-5U-unsplash 1.jpg"
+              alt="customer img">
+            <img class="customerSays__customerImgs" src="./images/nathan-van-de-graaf-8ngIBwU2-5U-unsplash 1.jpg"
+              alt="customer img">
+            <div class="customerSays__customerImgs customerSays__customerImgs--template">21k+</div>
           </div>
         </div>
-        <img class="banner__img" src="./images/Bunner.png" alt="bunner" />
-      </section>
+
+      </div>
     </div>
-    <section class="brands container">
-      <ul class="brands__list">
-        <li><img src="./images/Brand.jpg" alt="brand Brand" /></li>
-        <li><img src="./images/DesignBrand.jpg" alt="brand DesignBrand" /></li>
-        <li><img src="./images/Greenery.jpg" alt="brand Greenery" /></li>
-        <li><img src="./images/Natural.jpg" alt="brand Natural" /></li>
-        <li><img src="./images/Neture.jpg" alt="brand Neture" /></li>
-        <li><img src="./images/Company.jpg" alt="brand Company" /></li>
-      </ul>
-    </section>
+  </section>
 
-    <section class="howItWorks container">
-      <div class="howItWorks__content">
-        <span class="howItWorks__note">How it works</span>
-        <h2 class="sectionTitle">Start find a job you love with us easily</h2>
-        <ul class="js-howItWorksList">
-          <li class="js-howItWorksItem">
-            <div class="howItWorks__titleSearch" data-question="first">
-              <p><span class="howItWorks__numb">1</span>Complete Profile</p>
-              <div class="howItWorks__iconWrapper">
-                <img class="howItWorks__icon" src="./images/icons/down-arrow.svg" alt="down arrow" />
-              </div>
-            </div>
-            <p class="howItWorks__answerSearch" data-answer="first">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
-            </p>
-          </li>
-          <li class="js-howItWorksItem">
-            <div class="howItWorks__titleSearch" data-question="second">
-              <p><span class="howItWorks__numb">2</span>Search Vacancies</p>
-              <div class="howItWorks__iconWrapper">
-                <img class="howItWorks__icon" src="./images/icons/down-arrow.svg" alt="down arrow" />
-              </div>
-            </div>
-            <p class="howItWorks__answerSearch" data-answer="second">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
-            </p>
-          </li>
-          <li class="js-howItWorksItem">
-            <div class="howItWorks__titleSearch" data-question="third">
-              <p><span class="howItWorks__numb">3</span>Apply Job</p>
-              <div class="howItWorks__iconWrapper">
-                <img class="howItWorks__icon" src="./images/icons/down-arrow.svg" alt="down arrow" />
-              </div>
-            </div>
-            <p class="howItWorks__answerSearch" data-answer="third">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
-            </p>
-          </li>
+  <section class="container stats">
+    <dl class="stats__list">
+      <div class="stats__itemWrapper">
+        <dt class="stats__numb">36,789</dt>
+        <dd class="stats__value">Talented Freelancer</dd>
+      </div>
+      <div class="stats__itemWrapper">
+        <dt class="stats__numb">45,973</dt>
+        <dd class="stats__value">Visitors</dd>
+      </div>
+      <div class="stats__itemWrapper">
+        <dt class="stats__numb">56,461</dt>
+        <dd class="stats__value">Contract Made</dd>
+      </div>
+      <div class="stats__itemWrapper">
+        <dt class="stats__numb">852k</dt>
+        <dd class="stats__value">Companies</dd>
+      </div>
+    </dl>
+  </section>
+
+  <section class="pricingPlan container">
+    <h2 class="sectionTitle chooseUs__title">Pricing Plan</h2>
+    <p class="textCenter">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+      magna aliqua. Ut enim ad minim veniam.
+    </p>
+    <ul class="pricingPlan__cardList js-pricingPlans">
+      <li class="pricingPlan__cardItem">
+        <span class="pricingPlan__type">FREE</span>
+        <h3 class="pricingPlan__price">$0</h3>
+        <p class="pricingPlan__month">Per month</p>
+        <ul>
+          <li class="planListItem"><img src="./images/icons/chacke.svg" alt="" /> Lorem ipsum dolor sit amet.</li>
+          <li class="planListItem"><img src="./images/icons/chacke.svg" alt="" /> Lorem ipsum dolor sit amet.</li>
+          <li class="planListItem"><img src="./images/icons/chacke.svg" alt="" /> Lorem ipsum dolor sit amet.</li>
+        </ul>
+        <button type="button" class="btnStyle pricingPlan__btn">Purchase Now</button>
+      </li>
+
+      <li class="pricingPlan__cardItem pricingPlan__cardItem--active">
+        <span class="pricingPlan__type">PREMIUM</span>
+        <h3 class="pricingPlan__price">$75</h3>
+        <p class="pricingPlan__month">Per month</p>
+        <ul>
+          <li class="planListItem"><img src="./images/icons/chacke.svg" alt="" /> Lorem ipsum dolor sit amet.</li>
+          <li class="planListItem"><img src="./images/icons/chacke.svg" alt="" /> Lorem ipsum dolor sit amet.</li>
+          <li class="planListItem"><img src="./images/icons/chacke.svg" alt="" /> Lorem ipsum dolor sit amet.</li>
+        </ul>
+        <button type="button" class="btnStyle pricingPlan__btn">Purchase Now</button>
+      </li>
+
+      <li class="pricingPlan__cardItem">
+        <span class="pricingPlan__type">PLATNIUM</span>
+        <h3 class="pricingPlan__price">$500</h3>
+        <p class="pricingPlan__month">Per month</p>
+        <ul>
+          <li class="planListItem"><img src="./images/icons/chacke.svg" alt="" /> Lorem ipsum dolor sit amet.</li>
+          <li class="planListItem"><img src="./images/icons/chacke.svg" alt="" /> Lorem ipsum dolor sit amet.</li>
+          <li class="planListItem"><img src="./images/icons/chacke.svg" alt="" /> Lorem ipsum dolor sit amet.</li>
+        </ul>
+        <button type="button" class="btnStyle pricingPlan__btn">Purchase Now</button>
+      </li>
+    </ul>
+  </section>
+
+  <footer class="footer">
+    <div class="footer__content container">
+      <div>
+        <h3 class="footer__listTitle">Olearn</h3>
+        <ul>
+          <li>About</li>
+          <li>What we offer</li>
+          <li>Leadership</li>
+          <li>Careers</li>
         </ul>
       </div>
-      <video
-        class="howItWorks__video"
-        controls
-        poster="./images/christina-wocintechchat-com-YVT21p6pO_g-unsplash 1.jpg"
-      >
-        <source src="./video.mp4" type="video/mp4" />
-      </video>
-    </section>
-
-    <section class="chooseUs container">
-      <h2 class="sectionTitle chooseUs__title">Why Choose Us</h2>
-      <p class="textCenter">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-        magna aliqua. Ut enim ad minim veniam.
-      </p>
-      <div class="chooseUs__cards">
-        <ul class="chooseUs__cardsList">
-          <li class="chooseUs__cardItem">
-            <div class="chooseUs__cardImgWrapper"><img src="./images/icons/Vector.svg" alt="Vector icon" /></div>
-            <h3 class="chooseUs__cardTitle">Trusted</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna.
-            </p>
-          </li>
-          <li class="chooseUs__cardItem">
-            <div class="chooseUs__cardImgWrapper"><img src="./images/icons/Vector.svg" alt="Vector icon" /></div>
-            <h3 class="chooseUs__cardTitle">Easy to Use</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna.
-            </p>
-          </li>
-          <li class="chooseUs__cardItem">
-            <div class="chooseUs__cardImgWrapper"><img src="./images/icons/Vector.svg" alt="Vector icon" /></div>
-            <h3 class="chooseUs__cardTitle">Faster</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna.
-            </p>
-          </li>
+      <div>
+        <h3 class="footer__listTitle">Courses</h3>
+        <ul>
+          <li>Classroom Courses</li>
+          <li>Virtual Courses</li>
+          <li>E-Learning Courses</li>
+          <li>Off Line Courses</li>
         </ul>
       </div>
-    </section>
-
-    <section class="featuredJobs container">
-      <h2 class="featuredJobs__title sectionTitle">Featured Jobs</h2>
-      <p class="textCenter">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-        magna aliqua. Ut enim ad minim veniam.
-      </p>
-
-      <div class="featuredJobs__content">
-        <div class="featuredJobs__contentBtns">
-          <button class="featuredJobs__contentBtn featuredJobs__contentBtnLeft" data-direction="left">
-            <svg width="22" height="19" viewBox="0 0 22 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M19.0151 9.61149L11.9049 2.50124C11.4577 2.05404 11.4577 1.33852 11.9049 0.936039C12.3521 0.533558 13.0676 0.488838 13.4701 0.936039L21.3858 8.85176C21.833 9.29896 21.833 10.0145 21.3858 10.417L13.1123 18.6455C12.8887 18.8691 12.6204 18.9585 12.3074 18.9585C11.9943 18.9585 11.726 18.8691 11.5024 18.6455C11.0552 18.1983 11.0552 17.4827 11.5024 17.0803L19.0151 9.61149Z"
-                fill="#fff"
-              />
-              <path
-                d="M1.35116 8.67163L13.4256 8.67163C14.0517 8.67163 14.5436 9.16355 14.5436 9.78963C14.5436 10.4157 14.0517 10.9076 13.4256 10.9076L1.35116 10.9076C0.725075 10.9076 0.233154 10.4157 0.233154 9.78963C0.233154 9.16355 0.725075 8.67163 1.35116 8.67163Z"
-                fill="#fff"
-              />
-            </svg>
-          </button>
-          <button class="featuredJobs__contentBtn featuredJobs__contentBtnRight" data-direction="right">
-            <svg width="22" height="19" viewBox="0 0 22 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M19.0151 9.61149L11.9049 2.50124C11.4577 2.05404 11.4577 1.33852 11.9049 0.936039C12.3521 0.533558 13.0676 0.488838 13.4701 0.936039L21.3858 8.85176C21.833 9.29896 21.833 10.0145 21.3858 10.417L13.1123 18.6455C12.8887 18.8691 12.6204 18.9585 12.3074 18.9585C11.9943 18.9585 11.726 18.8691 11.5024 18.6455C11.0552 18.1983 11.0552 17.4827 11.5024 17.0803L19.0151 9.61149Z"
-                fill="#EF6010"
-              />
-              <path
-                d="M1.35116 8.67163L13.4256 8.67163C14.0517 8.67163 14.5436 9.16355 14.5436 9.78963C14.5436 10.4157 14.0517 10.9076 13.4256 10.9076L1.35116 10.9076C0.725075 10.9076 0.233154 10.4157 0.233154 9.78963C0.233154 9.16355 0.725075 8.67163 1.35116 8.67163Z"
-                fill="#EF6010"
-              />
-            </svg>
-          </button>
-        </div>
-        <div class="featuredJobs__contentCardsWrapper">
-          <ul class="featuredJobs__contentCardList">
-            <li class="featuredJobs__contentCard featuredJobs__contentCard--active">
-              <img class="featuredJobs__contentCardImg" src="./images/male-student.png" alt="people photo" />
-              <h3 class="featuredJobs__contentCardTitle">Database Programmer</h3>
-              <p class="featuredJobs__contentCardRole">Marraz Team</p>
-              <ul>
-                <li class="featuredJobs__cardInfo">
-                  <img src="./images/icons/money.svg" alt="money icon" />
-                  <p>$14,000 - $25,000 / <span class="featuredJobs__cardInfo--gray">monthly</span></p>
-                </li>
-                <li class="featuredJobs__cardInfo">
-                  <img src="./images/icons/location.svg" alt="location" />
-                  <p>London,Enlend <span class="featuredJobs__cardInfo--gray"> View map</span></p>
-                </li>
-              </ul>
-              <div class="featuredJobs__cardInfoBtns">
-                <button class="featuredJobs__cardInfoBtnHeadt" type="button">
-                  <img src="./images/icons/heart.svg" alt="heart icon" />
-                </button>
-                <button class="btnStyle" type="button">Apply Now</button>
-              </div>
-            </li>
-            <li class="featuredJobs__contentCard">
-              <img
-                class="featuredJobs__contentCardImg"
-                src="./images/nathan-van-de-graaf-8ngIBwU2-5U-unsplash 1.jpg"
-                alt="people photo"
-              />
-              <h3 class="featuredJobs__contentCardTitle">Database Programmer</h3>
-              <p class="featuredJobs__contentCardRole">Marraz Team</p>
-              <ul>
-                <li class="featuredJobs__cardInfo">
-                  <img src="./images/icons/money.svg" alt="money icon" />
-                  <p>$14,000 - $25,000 / <span class="featuredJobs__cardInfo--gray">monthly</span></p>
-                </li>
-                <li class="featuredJobs__cardInfo">
-                  <img src="./images/icons/location.svg" alt="location" />
-                  <p>London,Enlend <span class="featuredJobs__cardInfo--gray"> View map</span></p>
-                </li>
-              </ul>
-              <div class="featuredJobs__cardInfoBtns">
-                <button class="featuredJobs__cardInfoBtnHeadt" type="button">
-                  <img src="./images/icons/heart.svg" alt="heart icon" />
-                </button>
-                <button class="btnStyle" type="button">Apply Now</button>
-              </div>
-            </li>
-            <li class="featuredJobs__contentCard">
-              <img class="featuredJobs__contentCardImg" src="./images/male-student.png" alt="people photo" />
-              <h3 class="featuredJobs__contentCardTitle">Database Programmer</h3>
-              <p class="featuredJobs__contentCardRole">Marraz Team</p>
-              <ul>
-                <li class="featuredJobs__cardInfo">
-                  <img src="./images/icons/money.svg" alt="money icon" />
-                  <p>$14,000 - $25,000 / <span class="featuredJobs__cardInfo--gray">monthly</span></p>
-                </li>
-                <li class="featuredJobs__cardInfo">
-                  <img src="./images/icons/location.svg" alt="location" />
-                  <p>London,Enlend <span class="featuredJobs__cardInfo--gray"> View map</span></p>
-                </li>
-              </ul>
-              <div class="featuredJobs__cardInfoBtns">
-                <button class="featuredJobs__cardInfoBtnHeadt" type="button">
-                  <img src="./images/icons/heart.svg" alt="heart icon" />
-                </button>
-                <button class="btnStyle" type="button">Apply Now</button>
-              </div>
-            </li>
-            <li class="featuredJobs__contentCard">
-              <img
-                class="featuredJobs__contentCardImg"
-                src="./images/nathan-van-de-graaf-8ngIBwU2-5U-unsplash 1.jpg"
-                alt="people photo"
-              />
-              <h3 class="featuredJobs__contentCardTitle">Database Programmer</h3>
-              <p class="featuredJobs__contentCardRole">Marraz Team</p>
-              <ul>
-                <li class="featuredJobs__cardInfo">
-                  <img src="./images/icons/money.svg" alt="money icon" />
-                  <p>$14,000 - $25,000 / <span class="featuredJobs__cardInfo--gray">monthly</span></p>
-                </li>
-                <li class="featuredJobs__cardInfo">
-                  <img src="./images/icons/location.svg" alt="location" />
-                  <p>London,Enlend <span class="featuredJobs__cardInfo--gray"> View map</span></p>
-                </li>
-              </ul>
-              <div class="featuredJobs__cardInfoBtns">
-                <button class="featuredJobs__cardInfoBtnHeadt" type="button">
-                  <img src="./images/icons/heart.svg" alt="heart icon" />
-                </button>
-                <button class="btnStyle" type="button">Apply Now</button>
-              </div>
-            </li>
-            <li class="featuredJobs__contentCard">
-              <img class="featuredJobs__contentCardImg" src="./images/male-student.png" alt="people photo" />
-              <h3 class="featuredJobs__contentCardTitle">Database Programmer</h3>
-              <p class="featuredJobs__contentCardRole">Marraz Team</p>
-              <ul>
-                <li class="featuredJobs__cardInfo">
-                  <img src="./images/icons/money.svg" alt="money icon" />
-                  <p>$14,000 - $25,000 / <span class="featuredJobs__cardInfo--gray">monthly</span></p>
-                </li>
-                <li class="featuredJobs__cardInfo">
-                  <img src="./images/icons/location.svg" alt="location" />
-                  <p>London,Enlend <span class="featuredJobs__cardInfo--gray"> View map</span></p>
-                </li>
-              </ul>
-              <div class="featuredJobs__cardInfoBtns">
-                <button class="featuredJobs__cardInfoBtnHeadt" type="button">
-                  <img src="./images/icons/heart.svg" alt="heart icon" />
-                </button>
-                <button class="btnStyle" type="button">Apply Now</button>
-              </div>
-            </li>
-            <li class="featuredJobs__contentCard">
-              <img
-                class="featuredJobs__contentCardImg"
-                src="./images/nathan-van-de-graaf-8ngIBwU2-5U-unsplash 1.jpg"
-                alt="people photo"
-              />
-              <h3 class="featuredJobs__contentCardTitle">Database Programmer</h3>
-              <p class="featuredJobs__contentCardRole">Marraz Team</p>
-              <ul>
-                <li class="featuredJobs__cardInfo">
-                  <img src="./images/icons/money.svg" alt="money icon" />
-                  <p>$14,000 - $25,000 / <span class="featuredJobs__cardInfo--gray">monthly</span></p>
-                </li>
-                <li class="featuredJobs__cardInfo">
-                  <img src="./images/icons/location.svg" alt="location" />
-                  <p>London,Enlend <span class="featuredJobs__cardInfo--gray"> View map</span></p>
-                </li>
-              </ul>
-              <div class="featuredJobs__cardInfoBtns">
-                <button class="featuredJobs__cardInfoBtnHeadt" type="button">
-                  <img src="./images/icons/heart.svg" alt="heart icon" />
-                </button>
-                <button class="btnStyle" type="button">Apply Now</button>
-              </div>
-            </li>
-          </ul>
-        </div>
+      <div>
+        <h3 class="footer__listTitle">Community</h3>
+        <ul>
+          <li>Learner</li>
+          <li>Partners</li>
+          <li>Developers</li>
+          <li>Teaching Centre</li>
+        </ul>
       </div>
-      <div class="btnMoreWrapper">
-        <button class="btnStyle" type="button">View More</button>
+      <div>
+        <h3 class="footer__listTitle">Quick Links</h3>
+        <ul>
+          <li>Home</li>
+          <li>Professional Edu</li>
+          <li>Courses</li>
+          <li>Admissions</li>
+        </ul>
       </div>
-    </section>
-
-    <section class="container stats">
-      <dl class="stats__list">
-        <div class="stats__itemWrapper">
-          <dt class="stats__numb">36,789</dt>
-          <dd class="stats__value">Talented Freelancer</dd>
-        </div>
-        <div class="stats__itemWrapper">
-          <dt class="stats__numb">45,973</dt>
-          <dd class="stats__value">Visitors</dd>
-        </div>
-        <div class="stats__itemWrapper">
-          <dt class="stats__numb">56,461</dt>
-          <dd class="stats__value">Contract Made</dd>
-        </div>
-        <div class="stats__itemWrapper">
-          <dt class="stats__numb">852k</dt>
-          <dd class="stats__value">Companies</dd>
-        </div>
-      </dl>
-    </section>
-
-    <section class="pricingPlan container">
-      <h2 class="sectionTitle chooseUs__title">Pricing Plan</h2>
-      <p class="textCenter">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-        magna aliqua. Ut enim ad minim veniam.
-      </p>
-      <ul class="pricingPlan__cardList js-pricingPlans">
-        <li class="pricingPlan__cardItem">
-          <span class="pricingPlan__type">FREE</span>
-          <h3 class="pricingPlan__price">$0</h3>
-          <p class="pricingPlan__month">Per month</p>
-          <ul>
-            <li class="planListItem"><img src="./images/icons/chacke.svg" alt="" /> Lorem ipsum dolor sit amet.</li>
-            <li class="planListItem"><img src="./images/icons/chacke.svg" alt="" /> Lorem ipsum dolor sit amet.</li>
-            <li class="planListItem"><img src="./images/icons/chacke.svg" alt="" /> Lorem ipsum dolor sit amet.</li>
-          </ul>
-          <button type="button" class="btnStyle pricingPlan__btn">Purchase Now</button>
-        </li>
-
-        <li class="pricingPlan__cardItem pricingPlan__cardItem--active">
-          <span class="pricingPlan__type">PREMIUM</span>
-          <h3 class="pricingPlan__price">$75</h3>
-          <p class="pricingPlan__month">Per month</p>
-          <ul>
-            <li class="planListItem"><img src="./images/icons/chacke.svg" alt="" /> Lorem ipsum dolor sit amet.</li>
-            <li class="planListItem"><img src="./images/icons/chacke.svg" alt="" /> Lorem ipsum dolor sit amet.</li>
-            <li class="planListItem"><img src="./images/icons/chacke.svg" alt="" /> Lorem ipsum dolor sit amet.</li>
-          </ul>
-          <button type="button" class="btnStyle pricingPlan__btn">Purchase Now</button>
-        </li>
-
-        <li class="pricingPlan__cardItem">
-          <span class="pricingPlan__type">PLATNIUM</span>
-          <h3 class="pricingPlan__price">$500</h3>
-          <p class="pricingPlan__month">Per month</p>
-          <ul>
-            <li class="planListItem"><img src="./images/icons/chacke.svg" alt="" /> Lorem ipsum dolor sit amet.</li>
-            <li class="planListItem"><img src="./images/icons/chacke.svg" alt="" /> Lorem ipsum dolor sit amet.</li>
-            <li class="planListItem"><img src="./images/icons/chacke.svg" alt="" /> Lorem ipsum dolor sit amet.</li>
-          </ul>
-          <button type="button" class="btnStyle pricingPlan__btn">Purchase Now</button>
-        </li>
+      <div>
+        <h3 class="footer__listTitle">More</h3>
+        <ul>
+          <li>Press</li>
+          <li>Inventors</li>
+          <li>Helps</li>
+          <li>Terms</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__links container">
+      <h1 class="footer__logo">
+        <img src="./images/icons/Logo.svg" alt="logo" />
+        ZIRO
+      </h1>
+      <ul class="footer__linksList">
+        <li>Terms of Use</li>
+        <li>Protfolio</li>
+        <li>Privacy policy</li>
+        <li>Contact us</li>
+        <li>FAQ</li>
       </ul>
-    </section>
+      <ul class="footer__networks">
+        <li><img src="./images/icons/fasebook.svg" alt="Facebook"></li>
+        <li><img src="./images/icons/insta.svg" alt="Instagram"></li>
+        <li><img src="./images/icons/tviter.svg" alt="Twitter"></li>
+        <li><img src="./images/icons/youTube.svg" alt="YouTube"></li>
+      </ul>
 
-    <div style="height: 500px"></div>
-    <script src="./main.js"></script>
-  </body>
+    </div>
+
+  </footer>
+
+  <script src="./main.js"></script>
+</body>
+
 </html>
