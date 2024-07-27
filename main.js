@@ -24,12 +24,48 @@ accordion.addEventListener('click', e => {
   }
 });
 
-
 const chooseUsCardsList = document.querySelector('.chooseUs__cardsList');
 const chooseUsCardsAll = document.querySelectorAll('.chooseUs__cardItem');
 
-chooseUsCardsList.addEventListener('click', (e) => {
+chooseUsCardsList.addEventListener('click', e => {
   const clickElem = e.target.closest('.chooseUs__cardItem');
-  chooseUsCardsAll.forEach((elem) => elem.classList.remove('chooseUs__cardItem--active'));
-  clickElem.classList.add('chooseUs__cardItem--active')
-})
+  chooseUsCardsAll.forEach(elem => elem.classList.remove('chooseUs__cardItem--active'));
+  clickElem.classList.add('chooseUs__cardItem--active');
+});
+
+const swiperBtns = document.querySelector('.featuredJobs__contentBtns');
+const cardList = document.querySelector('.featuredJobs__contentCardList');
+const cards = document.querySelectorAll('.featuredJobs__contentCard');
+const cardWidth = cards[0].offsetWidth + 65;
+let currentIndex = 0;
+
+swiperBtns.addEventListener('click', e => {
+  const clickElem = e.target.closest('.featuredJobs__contentBtn');
+  if (!clickElem) return;
+
+  const direction = clickElem.getAttribute('data-direction');
+
+  if (direction === 'right' && currentIndex < cards.length - 1) {
+    currentIndex++;
+    updateSlider();
+    cards[currentIndex].classList.add('featuredJobs__contentCard--active');
+  } else if (direction === 'left' && currentIndex > 0) {
+    currentIndex--;
+    updateSlider();
+    cards[currentIndex + 1].classList.remove('featuredJobs__contentCard--active');
+  }
+});
+
+function updateSlider() {
+  const offset = -currentIndex * cardWidth;
+  cardList.style.transform = `translateX(${offset}px)`;
+}
+
+const plans = document.querySelector('.js-pricingPlans');
+const allCards = document.querySelectorAll('.pricingPlan__cardItem');
+
+plans.addEventListener('click', e => {
+  const clickElem = e.target.closest('.pricingPlan__cardItem');
+  allCards.forEach(item => item.classList.remove('pricingPlan__cardItem--active'));
+  clickElem.classList.add('pricingPlan__cardItem--active');
+});
