@@ -131,6 +131,16 @@
   margin: 76px 0 119px;
 }
 
+.js-btnApply {
+  background-color: #544cac33;
+  color: #544cac;
+}
+
+.btnStyle--bright {
+  background-color: #544cac;
+  color: var(--text-color-white);
+}
+
 @media (width < 1050px) {
   .featuredJobs__contentBtns {
     gap: 10px;
@@ -156,7 +166,6 @@
     flex-direction: column-reverse;
   }
 }
-
 
 @media (width < 770px) {
   .featuredJobs__contentCard {

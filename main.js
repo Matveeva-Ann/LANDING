@@ -1,3 +1,4 @@
+//акардіон секції howItWorks
 const accordion = document.querySelector('.js-howItWorksList');
 const accordionItems = document.querySelectorAll('.howItWorks__answerSearch');
 const accordionArrow = document.querySelectorAll('.howItWorks__icon');
@@ -24,6 +25,7 @@ accordion.addEventListener('click', e => {
   }
 });
 
+//вибір картки секції chooseUs
 const chooseUsCardsList = document.querySelector('.chooseUs__cardsList');
 const chooseUsCardsAll = document.querySelectorAll('.chooseUs__cardItem');
 
@@ -33,9 +35,12 @@ chooseUsCardsList.addEventListener('click', e => {
   clickElem.classList.add('chooseUs__cardItem--active');
 });
 
+//свайпер секції featuredJobs
 const swiperBtns = document.querySelector('.featuredJobs__contentBtns');
 const cardList = document.querySelector('.featuredJobs__contentCardList');
 const cards = document.querySelectorAll('.featuredJobs__contentCard');
+const buttons = document.querySelectorAll('.js-btnApply');
+
 const cardWidth = cards[0].offsetWidth + 65;
 let currentIndex = 0;
 
@@ -49,17 +54,21 @@ swiperBtns.addEventListener('click', e => {
     currentIndex++;
     updateSlider();
     cards[currentIndex].classList.add('featuredJobs__contentCard--active');
+    buttons[currentIndex].classList.add('btnStyle--bright');
   } else if (direction === 'left' && currentIndex > 0) {
     currentIndex--;
     updateSlider();
     cards[currentIndex + 1].classList.remove('featuredJobs__contentCard--active');
+    buttons[currentIndex + 1].classList.remove('btnStyle--bright');
   }
 });
 
-function updateSlider() {
+const updateSlider = () => {
   const offset = -currentIndex * cardWidth;
   cardList.style.transform = `translateX(${offset}px)`;
 }
+
+//вибір картки секції pricingPlans
 
 const plans = document.querySelector('.js-pricingPlans');
 const allCards = document.querySelectorAll('.pricingPlan__cardItem');
